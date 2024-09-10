@@ -1,0 +1,103 @@
+.header {
+  background-color: #1a1a1a;
+  padding: 1rem;
+}
+
+.headerContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  margin-right: 1rem;
+}
+
+.logo {
+  height: 40px;
+  width: auto;
+}
+
+.langButtons {
+  display: flex;
+  align-items: center;
+}
+
+.langButton {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 0.5rem;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.langButton img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navLink {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+  font-size: 0.875rem;
+}
+
+.callbackButton {
+  background-color: #e53e3e;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+
+  .navOpen {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #1a1a1a;
+    padding: 1rem;
+  }
+
+  .navLink {
+    margin: 0.5rem 0;
+  }
+
+  .menuButton {
+    display: block;
+  }
+
+  .langButtons {
+    display: none;
+  }
+}

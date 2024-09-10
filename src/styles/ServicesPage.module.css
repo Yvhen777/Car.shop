@@ -1,0 +1,124 @@
+.servicesPage {
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2rem;
+  }
+  
+  .iframeContainer {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    margin-bottom: 2rem;
+  }
+  
+  .iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+  
+  .chipTuningForm {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  .formTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .formContent {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formSection {
+    margin-bottom: 2rem;
+  }
+  
+  .formInput {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #3a3a3a;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    margin-top: 0.5rem;
+  }
+  
+  .formTextarea {
+    width: 100%;
+    padding: 0.5rem;
+    background-color: #3a3a3a;
+    border: none;
+    border-radius: 0.25rem;
+    color: white;
+    margin-top: 0.5rem;
+    resize: vertical;
+  }
+  
+  .formButton {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  .formButton:hover {
+    background-color: #2980b9;
+  }
+  
+  .formImage {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 2rem;
+  }
+  
+  @media (min-width: 768px) {
+    .title {
+      font-size: 2.5rem;
+    }
+  
+    .formContent {
+      flex-direction: row;
+    }
+  
+    .formSection {
+      width: 50%;
+      padding-right: 1rem;
+    }
+  
+    .formImage {
+      width: 50%;
+      margin-top: 0;
+      padding-left: 1rem;
+    }
+  }

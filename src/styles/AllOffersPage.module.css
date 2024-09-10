@@ -1,0 +1,38 @@
+.allOffersContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .pageTitle {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .carGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .testimonialSection {
+    margin-top: 40px;
+  }
+  
+  @media (max-width: 768px) {
+    .pageTitle {
+      font-size: 24px;
+    }
+  
+    .carGrid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .carGrid {
+      grid-template-columns: 1fr;
+    }
+  }

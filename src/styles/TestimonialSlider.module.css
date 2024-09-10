@@ -1,0 +1,106 @@
+/* Основные стили */
+.testimonialSlider {
+  background-color: #f0f0f0;
+  padding: 4rem 1rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sliderContainer {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.testimonials {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.testimonialWrapper {
+  flex: 0 0 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.testimonial {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 100%;
+}
+
+.testimonialImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+.testimonialTitle {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.testimonialDescription {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.testimonialDivider {
+  width: 50px;
+  height: 2px;
+  background-color: #ccc;
+  margin: 1rem auto;
+}
+
+.testimonialCar {
+  font-size: 0.875rem;
+  color: #888;
+}
+
+/* Навигационные кнопки */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.prevButton {
+  left: -20px;
+}
+
+.nextButton {
+  right: -20px;
+}
+
+@media (min-width: 768px) {
+  .testimonialWrapper {
+    flex: 0 0 33.333%;
+  }
+
+  .testimonials {
+    margin: 0 -15px;
+  }
+}
